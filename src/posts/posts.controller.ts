@@ -1,7 +1,7 @@
 /*
  * @Author: Jingdongdong
  * @Date: 2022-02-13 12:33:48
- * @LastEditTime: 2022-02-15 14:22:44
+ * @LastEditTime: 2022-02-20 08:42:45
  * @LastEditors: Jingdongdong
  * @Description: 
  */
@@ -15,11 +15,10 @@ import { Posts } from './posts.schema';
 @Controller('posts')
 @ApiTags('病例模板')
 export class PostsController {
-  // 使用依赖注入替换 typegoose
   constructor(@InjectModel(Posts) private readonly postModel:ModelType<Posts>){}
   @Get()
   @ApiOperation({ summary: "全部病例模板" })
-  async index() {
+  async index() { 
     return await this.postModel.find()
   }
 
