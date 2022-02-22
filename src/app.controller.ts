@@ -1,9 +1,9 @@
 /*
  * @Author: Jingdongdong
  * @Date: 2022-02-11 18:05:51
- * @LastEditTime: 2022-02-22 17:32:29
+ * @LastEditTime: 2022-02-22 17:34:46
  * @LastEditors: Jingdongdong
- * @Description: 
+ * @Description:  
  */
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
