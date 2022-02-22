@@ -5,7 +5,7 @@
  * @LastEditors: Jingdongdong 
  * @Description:  
  */
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common'; 
 import { AppService } from './app.service'; 
 import { ApiTags } from '@nestjs/swagger'
 @Controller()
