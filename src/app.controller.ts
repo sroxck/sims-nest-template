@@ -2,11 +2,11 @@
  * @Author: Jingdongdong
  * @Date: 2022-02-11 18:05:51
  * @LastEditTime: 2022-02-22 17:34:46
- * @LastEditors: Jingdongdong
+ * @LastEditors: Jingdongdong 
  * @Description:  
  */
 import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { AppService } from './app.service'; 
 import { ApiTags } from '@nestjs/swagger'
 @Controller()
 @ApiTags('全局')
