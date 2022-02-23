@@ -1,8 +1,8 @@
 /*
  * @Author: Jingdongdong
  * @Date: 2022-02-11 18:05:51
- * @LastEditTime: 2022-02-22 17:34:46
- * @LastEditors: Jingdongdong 
+ * @LastEditTime: 2022-02-23 15:55:44
+ * @LastEditors: Jingdongdong
  * @Description:  
  */
 import { Controller, Get } from '@nestjs/common'; 
@@ -15,7 +15,8 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return this.appService.getHello();
+    
+    return '333'
   }
   @Get('home')
   index(){

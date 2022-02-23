@@ -1,13 +1,14 @@
 /*
  * @Author: Jingdongdong
  * @Date: 2022-02-13 12:33:48
- * @LastEditTime: 2022-02-20 08:42:45
+ * @LastEditTime: 2022-02-23 15:58:29
  * @LastEditors: Jingdongdong
  * @Description: 
  */
 import { Body, Controller, Delete, Get, Param, Post, Put, Query } from '@nestjs/common';
 import { ApiOperation, ApiProperty, ApiTags } from '@nestjs/swagger';
 import { ModelType } from '@typegoose/typegoose/lib/types';
+import { each, map } from 'funt';
 import { InjectModel } from 'nestjs-typegoose';
 import { CreatePostsDto, UpdatePostsDto } from './posts.dto';
 import { Posts } from './posts.schema';
@@ -19,6 +20,12 @@ export class PostsController {
   @Get()
   @ApiOperation({ summary: "全部病例模板" })
   async index() { 
+    const casl = map([1,2,3],(item)=>{
+     return item +3
+    })
+    console.log(casl);
+    
+    return JSON.stringify(casl);
     return await this.postModel.find()
   }
 
