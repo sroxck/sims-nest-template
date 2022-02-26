@@ -1,7 +1,7 @@
 /*
  * @Author: Jingdongdong
  * @Date: 2022-02-11 18:05:51
- * @LastEditTime: 2022-02-23 15:55:44
+ * @LastEditTime: 2022-02-26 12:16:33
  * @LastEditors: Jingdongdong
  * @Description:  
  */
@@ -13,7 +13,7 @@ import { ApiTags } from '@nestjs/swagger'
 export class AppController {
   constructor(private readonly appService: AppService) {} 
 
-  @Get()
+  @Get() 
   getHello(): string {
     
     return '333'
