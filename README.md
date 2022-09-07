@@ -6,9 +6,9 @@
  * @Description: 
 -->
 
-# 微前端技术分享API服务
+# 前端API服务
 基于NestJs + TypeScript + TypeORM + Redis + MongoDB 
-> 数据截取于中医数仓部分病例数据
+> 数据截取于数仓部分数据
 
 ## Installation
 
